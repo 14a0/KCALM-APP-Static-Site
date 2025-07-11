@@ -13,183 +13,180 @@
         }
         
         :root {
-            --black: #000000;
-            --white: #ffffff;
-            --gray: #666666;
-            --light-gray: #f7f7f7;
-            --border: #e5e5e5;
-            --max-width: 680px;
+            --primary: #000000;
+            --secondary: #0a0a0a;
+            --text: #ffffff;
+            --text-dim: #999999;
+            --accent: #0066ff;
+            --border: #222222;
         }
         
-        html {
-            scroll-behavior: smooth;
+        html, body {
+            height: 100%;
+            overflow: hidden;
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            font-size: 16px;
-            line-height: 1.6;
-            color: var(--black);
-            background-color: var(--white);
+            font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            color: var(--text);
+            background-color: var(--primary);
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
         
         .container {
-            max-width: var(--max-width);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            max-width: 1400px;
             margin: 0 auto;
-            padding: 0 24px;
+            padding: 40px;
         }
         
         header {
-            padding: 120px 0 80px;
-            text-align: center;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 24px;
+            margin-bottom: 40px;
         }
         
-        h1 {
-            font-size: 32px;
-            font-weight: 500;
-            letter-spacing: -0.5px;
+        .logo-line {
+            display: flex;
+            align-items: baseline;
+            gap: 16px;
             margin-bottom: 8px;
         }
         
-        .subtitle {
-            font-size: 18px;
-            color: var(--gray);
+        h1 {
+            font-size: 24px;
             font-weight: 400;
+            letter-spacing: -0.5px;
         }
         
-        nav {
-            padding: 40px 0;
-            text-align: center;
-            border-bottom: 1px solid var(--border);
-        }
-        
-        nav a {
-            color: var(--black);
-            text-decoration: none;
-            margin: 0 24px;
+        .subtitle {
             font-size: 14px;
-            font-weight: 500;
+            color: var(--text-dim);
+            font-weight: 300;
+        }
+        
+        .tagline {
+            font-size: 12px;
+            color: var(--text-dim);
             letter-spacing: 0.5px;
             text-transform: uppercase;
+        }
+        
+        .content {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 60px;
+        }
+        
+        .section h2 {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--text-dim);
+            margin-bottom: 20px;
+        }
+        
+        .section p {
+            color: var(--text);
+            margin-bottom: 16px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .info-item {
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+        
+        .info-label {
+            color: var(--text-dim);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: block;
+            margin-bottom: 4px;
+        }
+        
+        .info-value {
+            color: var(--text);
+        }
+        
+        a {
+            color: var(--accent);
+            text-decoration: none;
             transition: opacity 0.2s ease;
         }
         
-        nav a:hover {
-            opacity: 0.6;
-        }
-        
-        section {
-            padding: 80px 0;
-            border-bottom: 1px solid var(--border);
-        }
-        
-        section:last-of-type {
-            border-bottom: none;
-        }
-        
-        h2 {
-            font-size: 24px;
-            font-weight: 500;
-            margin-bottom: 32px;
-            letter-spacing: -0.3px;
-        }
-        
-        h3 {
-            font-size: 18px;
-            font-weight: 500;
-            margin-top: 48px;
-            margin-bottom: 24px;
-        }
-        
-        p {
-            color: var(--gray);
-            margin-bottom: 24px;
-            line-height: 1.8;
-        }
-        
-        .contact-info {
-            margin: 32px 0;
-        }
-        
-        .contact-info p {
-            margin-bottom: 16px;
-            color: var(--black);
-        }
-        
-        .contact-label {
-            font-weight: 500;
-            display: inline-block;
-            min-width: 140px;
+        a:hover {
+            opacity: 0.7;
         }
         
         .button {
             display: inline-block;
-            background: var(--black);
-            color: var(--white);
-            padding: 12px 32px;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 14px;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            padding: 8px 20px;
+            margin-top: 20px;
+            font-size: 12px;
             letter-spacing: 0.5px;
             text-transform: uppercase;
-            margin-top: 24px;
-            transition: opacity 0.2s ease;
+            transition: all 0.2s ease;
         }
         
         .button:hover {
-            opacity: 0.8;
-        }
-        
-        .faq-item {
-            margin-bottom: 32px;
-            padding-bottom: 32px;
-            border-bottom: 1px solid var(--border);
-        }
-        
-        .faq-item:last-child {
-            border-bottom: none;
-        }
-        
-        .faq-item strong {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
+            background: var(--accent);
+            color: var(--primary);
+            opacity: 1;
         }
         
         footer {
-            text-align: center;
-            padding: 80px 0;
-            color: var(--gray);
-            font-size: 14px;
+            border-top: 1px solid var(--border);
+            padding-top: 24px;
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            color: var(--text-dim);
+        }
+        
+        @media (max-width: 1024px) {
+            .content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .container {
+                height: auto;
+                min-height: 100vh;
+            }
+            
+            html, body {
+                overflow: auto;
+            }
         }
         
         @media (max-width: 640px) {
-            header {
-                padding: 80px 0 60px;
+            .container {
+                padding: 24px;
             }
             
-            h1 {
-                font-size: 28px;
+            .logo-line {
+                flex-direction: column;
+                gap: 4px;
             }
             
-            nav {
-                padding: 32px 0;
-            }
-            
-            nav a {
-                display: block;
-                margin: 16px 0;
-            }
-            
-            section {
-                padding: 60px 0;
-            }
-            
-            .contact-label {
-                display: block;
-                margin-bottom: 4px;
+            footer {
+                flex-direction: column;
+                gap: 8px;
+                text-align: center;
             }
         }
     </style>
@@ -197,63 +194,59 @@
 <body>
     <div class="container">
         <header>
-            <h1>14A0 Pty Ltd</h1>
-            <p class="subtitle">Trading as KCALM LABS</p>
+            <div class="logo-line">
+                <h1>14A0 PTY LTD</h1>
+                <span class="subtitle">KCALM LABS</span>
+            </div>
+            <p class="tagline">AI-Powered Nutrition Software & Robotics R&D</p>
         </header>
         
-        <nav>
-            <a href="#about">About</a>
-            <a href="#support">Support</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="content">
+            <div class="section">
+                <h2>About</h2>
+                <p>We specialize in cutting-edge artificial intelligence solutions for nutrition software and robotics research & development.</p>
+                <p>Our flagship product, KCALM, represents the future of AI-powered nutrition tracking.</p>
+                <a href="https://kcalm.app" target="_blank" rel="noopener noreferrer" class="button">KCALM App</a>
+            </div>
+            
+            <div class="section">
+                <h2>Support</h2>
+                <div class="info-item">
+                    <span class="info-label">Email</span>
+                    <span class="info-value"><a href="mailto:info@14a0.com">info@14a0.com</a></span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Response Time</span>
+                    <span class="info-value">24-48 hours</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Hours</span>
+                    <span class="info-value">Mon-Fri, 9AM-5PM AEST</span>
+                </div>
+                <p style="margin-top: 20px; font-size: 12px; color: var(--text-dim);">For technical assistance, bug reports, or feature requests.</p>
+            </div>
+            
+            <div class="section">
+                <h2>Company</h2>
+                <div class="info-item">
+                    <span class="info-label">Legal Entity</span>
+                    <span class="info-value">14A0 Pty Ltd</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">ABN</span>
+                    <span class="info-value">97 688 629 094</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Location</span>
+                    <span class="info-value">Sydney, NSW, Australia</span>
+                </div>
+            </div>
+        </div>
         
-        <section id="about">
-            <h2>About</h2>
-            <p>14A0 Pty Ltd, operating as KCALM LABS, specializes in cutting-edge artificial intelligence solutions for nutrition software and robotics research & development.</p>
-            <p>We are dedicated to advancing the intersection of AI technology and health sciences to create innovative solutions that improve lives.</p>
-            <a href="https://kcalm.app" target="_blank" rel="noopener noreferrer" class="button">Visit KCALM App</a>
-        </section>
-        
-        <section id="support">
-            <h2>Support</h2>
-            <p>We're here to help. If you have any questions about our products, need technical assistance, or want to provide feedback, please reach out.</p>
-            
-            <div class="contact-info">
-                <p><span class="contact-label">Support Email:</span> info@14a0.com</p>
-                <p><span class="contact-label">Response Time:</span> Within 24-48 hours</p>
-                <p><span class="contact-label">Business Hours:</span> Monday-Friday, 9 AM - 5 PM AEST</p>
-            </div>
-            
-            <h3>Frequently Asked Questions</h3>
-            
-            <div class="faq-item">
-                <strong>How do I get started with KCALM app?</strong>
-                <p>Download the app from the App Store or Google Play, create an account, and follow the onboarding tutorial.</p>
-            </div>
-            
-            <div class="faq-item">
-                <strong>Is my data secure?</strong>
-                <p>Yes, we use industry-standard encryption and never share your personal data with third parties.</p>
-            </div>
-            
-            <div class="faq-item">
-                <strong>How can I report a bug or suggest a feature?</strong>
-                <p>Email us at info@14a0.com with detailed information, and we'll address it promptly.</p>
-            </div>
-        </section>
-        
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>For partnerships, media inquiries, or general business discussions.</p>
-            <div class="contact-info">
-                <p><span class="contact-label">General Email:</span> info@14a0.com</p>
-                <p><span class="contact-label">Location:</span> Sydney, NSW, Australia</p>
-            </div>
-        </section>
+        <footer>
+            <span>© 2025 14A0 Pty Ltd. All rights reserved.</span>
+            <span>ACN 688 629 094</span>
+        </footer>
     </div>
-    
-    <footer>
-        <p>© 2025 14A0 Pty Ltd (ABN 97 688 629 094)</p>
-    </footer>
 </body>
 </html>
