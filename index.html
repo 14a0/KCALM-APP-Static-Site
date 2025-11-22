@@ -32,6 +32,11 @@
             line-height: 1.5;
             color: var(--text);
             background-color: var(--primary);
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+            background-size: 50px 50px;
+            background-position: -1px -1px;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             font-variant-numeric: slashed-zero;
@@ -50,6 +55,23 @@
             border-bottom: 1px solid var(--border);
             padding-bottom: 24px;
             margin-bottom: 40px;
+            position: relative;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--accent);
+            animation: borderExpand 1.5s ease-out forwards;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes borderExpand {
+            to { width: 200px; }
         }
         
         .logo-line {
@@ -65,6 +87,7 @@
             letter-spacing: 1px;
             font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
             font-variant-numeric: slashed-zero;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
         }
         
         .subtitle {
@@ -94,6 +117,19 @@
             text-transform: uppercase;
             color: var(--text-dim);
             margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 30px;
+            height: 1px;
+            background: var(--accent);
+            opacity: 0.5;
         }
         
         .section p {
@@ -124,11 +160,28 @@
         a {
             color: var(--accent);
             text-decoration: none;
-            transition: opacity 0.2s ease;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
         }
-        
+
         a:hover {
-            opacity: 0.7;
+            color: #3385ff;
+            text-shadow: 0 0 8px rgba(0, 102, 255, 0.3);
+        }
+
+        a:not(.button)::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--accent);
+            transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        a:not(.button):hover::after {
+            width: 100%;
         }
         
         .button {
@@ -140,13 +193,31 @@
             font-size: 12px;
             letter-spacing: 0.5px;
             text-transform: uppercase;
-            transition: all 0.2s ease;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
         }
-        
-        .button:hover {
+
+        .button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
             background: var(--accent);
+            transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: -1;
+        }
+
+        .button:hover {
             color: var(--primary);
-            opacity: 1;
+            box-shadow: 0 0 20px rgba(0, 102, 255, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .button:hover::before {
+            left: 0;
         }
         
         footer {
@@ -158,6 +229,23 @@
             align-items: center;
             font-size: 12px;
             color: var(--text-dim);
+            position: relative;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            right: 0;
+            width: 0;
+            height: 1px;
+            background: var(--accent);
+            animation: borderExpandRight 1.5s ease-out forwards;
+            animation-delay: 1.5s;
+        }
+
+        @keyframes borderExpandRight {
+            to { width: 200px; }
         }
         
         /* Typing animation */
@@ -177,8 +265,19 @@
         .section {
             opacity: 0;
             animation: fadeIn 0.8s ease-out forwards;
+            padding: 24px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
         }
-        
+
+        .section:hover {
+            border-color: rgba(255, 255, 255, 0.05);
+            background: rgba(255, 255, 255, 0.01);
+            transform: translateY(-2px);
+        }
+
         .section:nth-child(1) { animation-delay: 0.5s; }
         .section:nth-child(2) { animation-delay: 0.7s; }
         .section:nth-child(3) { animation-delay: 0.9s; }
@@ -253,10 +352,9 @@
         
         <div class="content">
             <div class="section">
-                <h2>About</h2>
-                <p>We specialize in cutting-edge artificial intelligence solutions for nutrition software and robotics research & development.</p>
-                <p>Visit our nutrition tracking app:</p>
-                <a href="https://kcalm.app" target="_blank" rel="noopener noreferrer" class="button">KCALM App</a>
+                <h2>Mission</h2>
+                <p>We are engineering the automation layer for human life. From biological context to physical labor, our goal is to automate the maintenance of life so humans can focus on its meaning.</p>
+                <p>When the marginal cost of surviving drops to zero through AI and robotics, the value of living becomes infinite.</p>
             </div>
             
             <div class="section">
