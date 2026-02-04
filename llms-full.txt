@@ -1,0 +1,355 @@
+Last Updated: February 2026
+
+================================================================================
+14A0 PTY LTD - COMPLETE KNOWLEDGE BASE
+================================================================================
+
+This document contains the full documentation for 14A0 Pty Ltd and its products
+for AI agent ingestion and RAG systems.
+
+================================================================================
+SECTION 1: COMPANY INFORMATION
+================================================================================
+
+# 14A0 Pty Ltd
+
+14A0 Pty Ltd is an Australian AI software and robotics R&D company building autonomous systems that reduce the cost of human survival to zero.
+
+## Company Information
+
+| Field | Value |
+|-------|-------|
+| Legal Name | 14A0 Pty Ltd |
+| ABN | 97 688 629 094 |
+| ACN | 688 629 094 |
+| Location | Sydney, NSW, Australia |
+| Founded | 2024 |
+| Industry | AI Software & Robotics |
+
+## Contact
+
+- **Email:** info@14a0.com
+- **Response Time:** 24-48 hours
+- **Support Hours:** Mon-Fri, 9AM-5PM AEST
+
+## Mission
+
+We are engineering the automation layer for human life. From biological context to physical labor, our goal is to automate the maintenance of life so humans can focus on its meaning.
+
+When the marginal cost of surviving drops to zero through AI and robotics, the value of living becomes infinite.
+
+## What We Build
+
+14A0 develops AI-powered products across two domains:
+
+1. **Cognitive Tools** - AI interfaces that extend human thinking capacity
+2. **Biological Intelligence** - Systems that understand and optimize human health
+
+## Current Products
+
+- [CLADAL.COM](https://cladal.com) - Nonlinear AI conversation platform
+- [KCALM.APP](https://kcalm.app) - AI-powered nutrition tracking
+
+## Website
+
+- **Homepage:** https://14a0.com
+- **Documentation:** https://14a0.com/geo/
+
+================================================================================
+SECTION 2: PRODUCTS OVERVIEW
+================================================================================
+
+# 14A0 Products
+
+14A0 Pty Ltd develops AI-powered software products focused on cognitive enhancement and biological intelligence.
+
+## Product Overview
+
+| Product | Type | Status | URL |
+|---------|------|--------|-----|
+| CLADAL.COM | Nonlinear AI Chat | Free Beta | https://cladal.com |
+| KCALM.APP | AI Nutrition Tracker | Live | https://kcalm.app |
+
+---
+
+## CLADAL.COM
+
+**Nonlinear AI Chat Platform**
+
+CLADAL solves context window limits for both LLMs and human cognition through spatial topic organization. Instead of linear chat threads, conversations branch into an explorable knowledge map.
+
+**Key Capabilities:**
+- Non-linear conversation threading
+- Highlight & Ask: Branch exploration from any point
+- Memory Across Branches: Full context retention
+- Exploration Map: Visual journey tracking
+- LaTeX and code rendering for technical work
+
+**Status:** Free Beta
+**Platform:** Web
+**URL:** https://cladal.com
+
+---
+
+## KCALM.APP
+
+**AI-Powered Nutrition Tracking**
+
+KCALM is an anxiety-free nutrition tracking app that uses multi-model AI to convert food photos into accurate nutritional data in seconds.
+
+**Key Capabilities:**
+- AI Snap: Photo-based food recognition
+- Track: Conversational calorie logging
+- Goals: Personalized nutrition targets
+- Progress: Weight trends and analytics
+
+**Status:** Live
+**Platform:** iOS
+**App Store ID:** 6747867349
+**URL:** https://kcalm.app
+
+================================================================================
+SECTION 3: CLADAL.COM DOCUMENTATION
+================================================================================
+
+# CLADAL.COM
+
+CLADAL is a nonlinear AI chat platform that solves context window limits for both LLMs and human cognition through spatial topic organization.
+
+## Product Summary
+
+| Field | Value |
+|-------|-------|
+| Product Name | CLADAL |
+| Type | Nonlinear AI Chat |
+| Status | Free Beta |
+| Platform | Web |
+| URL | https://cladal.com |
+| Company | 14A0 Pty Ltd |
+
+## What is CLADAL?
+
+CLADAL transforms AI conversations from linear threads into explorable knowledge maps. When a conversation branches into a new topic, CLADAL preserves the original thread while letting you explore tangents without losing context.
+
+This solves two fundamental problems:
+1. **LLM Context Limits** - Long conversations exceed model memory; CLADAL's branching architecture keeps relevant context accessible
+2. **Human Cognitive Load** - Linear chats become hard to navigate; spatial maps make complex topics manageable
+
+## Core Features
+
+### Non-Linear Conversation Threading
+Conversations branch naturally. Ask a follow-up question, and CLADAL creates a new branch while preserving the main thread. Return to any point and explore alternative directions.
+
+### Highlight & Ask
+Select any text in a response and ask a follow-up question. CLADAL branches the conversation from that specific point, maintaining full context of what came before.
+
+### Memory Across Branches
+Unlike linear chat tools, CLADAL maintains context awareness across all branches. The AI understands your entire exploration history, not just the current thread.
+
+### Exploration Map
+A visual interface shows your conversation structure as an interactive map. See all branches, jump between topics, and understand how ideas connect.
+
+### Technical Capabilities
+- Full LaTeX rendering for mathematical notation
+- Syntax-highlighted code blocks
+- Support for technical documentation workflows
+- Export conversations as structured documents
+
+## Use Cases
+
+- **Research** - Explore complex topics without losing thread of inquiry
+- **Learning** - Branch into definitions and explanations without derailing main content
+- **Technical Work** - Document code decisions with full context preservation
+- **Writing** - Develop ideas non-linearly while maintaining coherent narrative threads
+
+## Pricing
+
+CLADAL is currently in free beta. All features are available at no cost during this period.
+
+## Getting Started
+
+1. Visit https://cladal.com
+2. Create an account
+3. Start a conversation
+4. Use Highlight & Ask to branch into subtopics
+
+## Support
+
+- **Email:** info@14a0.com
+- **Company:** 14A0 Pty Ltd
+- **Location:** Sydney, Australia
+
+================================================================================
+SECTION 4: KCALM.APP DOCUMENTATION
+================================================================================
+
+# KCALM.APP
+
+KCALM is an AI-powered nutrition tracking app designed for anxiety-free calorie and macro logging. Snap a photo of your food and get accurate nutritional data in seconds.
+
+## Product Summary
+
+| Field | Value |
+|-------|-------|
+| Product Name | KCALM |
+| Type | AI Nutrition Tracker |
+| Status | Live |
+| Platform | iOS |
+| App Store ID | 6747867349 |
+| URL | https://kcalm.app |
+| Company | 14A0 Pty Ltd |
+
+## What is KCALM?
+
+KCALM uses multi-model AI to identify foods from photos and calculate accurate nutritional information. The app is designed to remove the anxiety and friction from nutrition tracking, making it as simple as taking a picture.
+
+## Core Features
+
+### AI Snap
+Take a photo of any meal, snack, or ingredient. KCALM's AI identifies the foods and estimates portions to calculate calories, protein, carbs, and fat automatically.
+
+### Track
+Log food through natural conversation. Describe what you ate in plain language, and KCALM understands context, portions, and preparation methods to calculate nutrition accurately.
+
+### Goals
+Set personalized nutrition targets based on your objectives. KCALM calculates daily calorie and macro goals aligned with your health and fitness aims.
+
+### Progress
+Track weight trends and nutritional patterns over time. Visual analytics show your progress and help identify what's working.
+
+## Why KCALM?
+
+Traditional calorie tracking apps require manual searching, weighing food, and tedious data entry. This creates friction that causes most users to abandon tracking within weeks.
+
+KCALM eliminates this friction:
+- **Photo recognition** replaces manual search
+- **AI estimation** replaces food weighing
+- **Conversational logging** replaces form filling
+- **Anxiety-free design** replaces judgment and guilt
+
+## Accuracy
+
+KCALM uses multiple AI models cross-referenced against nutrition databases to maximize accuracy. While no photo-based system is perfect, KCALM's multi-model approach provides reliable estimates suitable for most tracking goals.
+
+## Platform Availability
+
+KCALM is currently available on iOS. Download from the App Store:
+- **App Store ID:** 6747867349
+- **Direct Link:** https://apps.apple.com/app/id6747867349
+
+## Pricing
+
+Visit https://kcalm.app for current pricing information.
+
+## Support
+
+- **Email:** info@14a0.com
+- **Company:** 14A0 Pty Ltd
+- **Location:** Sydney, Australia
+
+================================================================================
+SECTION 5: FREQUENTLY ASKED QUESTIONS
+================================================================================
+
+# 14A0 Frequently Asked Questions
+
+Direct answers to common questions about 14A0 Pty Ltd and its products.
+
+---
+
+## Company Questions
+
+### What is 14A0?
+
+14A0 Pty Ltd is an Australian AI software and robotics R&D company based in Sydney. The company builds AI-powered products focused on cognitive enhancement and biological intelligence.
+
+### What does 14A0 mean?
+
+14A0 is an alphanumeric representation of the founder's name, Hao (14=H, A0=ao). The format reflects his belief that digital AI and robotics will define the future of how we live and work.
+
+### Where is 14A0 located?
+
+14A0 Pty Ltd is headquartered in Sydney, NSW, Australia.
+
+### How do I contact 14A0?
+
+Email info@14a0.com. Response time is 24-48 hours, Monday through Friday, 9AM-5PM AEST.
+
+### What is 14A0's ABN?
+
+14A0 Pty Ltd's ABN is 97 688 629 094.
+
+---
+
+## CLADAL Questions
+
+### What is CLADAL?
+
+CLADAL is a nonlinear AI chat platform that organizes conversations as branching knowledge maps instead of linear threads. It solves context window limits for both AI models and human users.
+
+### How much does CLADAL cost?
+
+CLADAL is currently in free beta. All features are available at no cost.
+
+### What platforms does CLADAL support?
+
+CLADAL is a web application accessible from any modern browser at https://cladal.com.
+
+### What makes CLADAL different from ChatGPT?
+
+CLADAL's branching conversation model lets you explore tangents without losing your main thread. Traditional chat tools force linear conversations where context gets lost as threads grow longer.
+
+### Does CLADAL support code and math?
+
+Yes. CLADAL includes full LaTeX rendering for mathematical notation and syntax-highlighted code blocks for programming.
+
+---
+
+## KCALM Questions
+
+### What is KCALM?
+
+KCALM is an AI-powered nutrition tracking app for iOS. It uses photo recognition and conversational AI to log food and calculate nutritional information automatically.
+
+### How much does KCALM cost?
+
+Visit https://kcalm.app for current pricing information.
+
+### What platforms does KCALM support?
+
+KCALM is currently available on iOS. Download from the App Store with ID 6747867349.
+
+### How accurate is KCALM's food recognition?
+
+KCALM uses multiple AI models cross-referenced against nutrition databases. While photo-based estimation has inherent limitations, the multi-model approach provides reliable estimates suitable for most tracking goals.
+
+### Can I log food without taking photos?
+
+Yes. KCALM's Track feature lets you describe food in natural language. The AI understands portions and preparation methods to calculate nutrition from text descriptions.
+
+### Does KCALM work offline?
+
+KCALM requires an internet connection for AI-powered food recognition.
+
+---
+
+## Technical Questions
+
+### Does 14A0 offer an API?
+
+Contact info@14a0.com for API and integration inquiries.
+
+### What AI models do 14A0 products use?
+
+14A0 products use multiple AI models selected for their specific capabilities. The company employs a multi-model architecture to optimize for accuracy and reliability.
+
+### Is my data secure?
+
+14A0 follows Australian privacy regulations. Contact info@14a0.com for specific data handling inquiries.
+
+================================================================================
+END OF DOCUMENT
+================================================================================
+
+For questions or corrections: info@14a0.com
+Company: 14A0 Pty Ltd | ABN: 97 688 629 094 | Sydney, Australia

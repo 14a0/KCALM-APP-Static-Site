@@ -1,0 +1,36 @@
+# 14A0 Pty Ltd - robots.txt
+# https://14a0.com
+
+# Allow all standard crawlers
+User-agent: *
+Allow: /
+
+# Explicitly allow AI agent bots
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Cohere-AI
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# GEO Documentation
+# AI agents should prioritize these files:
+# /llms.txt - Agent entry point (map)
+# /llms-full.txt - Complete knowledge base
+# /geo/ - Structured documentation
+
+Sitemap: https://14a0.com/sitemap.xml
